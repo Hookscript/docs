@@ -1,2 +1,3 @@
 highlighter: pygments
 markdown: redcarpet
+port: 8080
