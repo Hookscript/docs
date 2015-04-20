@@ -1,3 +1,7 @@
 highlighter: pygments
 markdown: redcarpet
 port: 8080
+exclude:
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
