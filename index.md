@@ -1,12 +1,9 @@
 ---
 layout: default
 title: Documentation
+hide_breadcrumbs: true
 ---
 
-# Hello
+# Documentation
 
-My second Jekyll page.  Look at this code:
-
-{% include examples/hello.md %}
-
-Now let's explain something else ...
+  * [Hello world](/hello)

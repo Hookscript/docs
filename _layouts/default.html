@@ -60,6 +60,15 @@
         </div> <!-- end header -->
 
         <div id="content">
+            {% if page.hide_breadcrumbs %}
+            {% else %}
+            <p class="breadcrumbs">
+                <a href="/">Docs</a>
+                &gt;
+                {{page.title}}
+            </p>
+            <h1>{{page.title}}</h1>
+            {% endif %}
             {{content}}
         </div> <!-- end content -->
 
