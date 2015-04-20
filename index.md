@@ -6,4 +6,4 @@ hide_breadcrumbs: true
 
 # Documentation
 
-  * [Hello world](/hello)
+  1. [Hello world](/hello)

@@ -1,0 +1,9 @@
+[submodule "lang/go"]
+	path = lang/go
+	url = https://github.com/Hookscript/lang-go.git
+[submodule "lang/prolog-swi"]
+	path = lang/prolog-swi
+	url = https://github.com/Hookscript/lang-prolog-swi.git
+[submodule "lang/perl"]
+	path = lang/perl
+	url = https://github.com/Hookscript/lang-perl.git
