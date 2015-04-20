@@ -3,8 +3,9 @@ layout: default
 title: Hello world
 ---
 
-My second Jekyll page.  Look at this code:
+Select your preferred language from the dropdown above. Now it's time to
+say hello.
 
-{% include examples/hello.md %}
+{% include examples/hello-plain.md %}
 
 Now let's explain something else ...
