@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>
+        {% if page.title %}
+            {{ page.title }}
+        {% else %}
+            hookscript | Easily code, test, deploy &amp; host custom webhooks
+        {% endif %}
+    </title>
+    <link rel="stylesheet" href="https://www.hookscript.com/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://www.hookscript.com/css/main.css" type="text/css">
+    <link rel="stylesheet" href="pygments.css" type="text/css">
+    <link rel="stylesheet" href="docs.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="twitter:card" content="summary" />
+
+    <!-- open graph data for search and social -->
+    {% if page.title %}
+    <meta property="og:title" content="{{.Title}}" />
+    {% endif %}
+    {% if page.keywords %}
+    <meta name="keywords" content="{{.Keywords}}">
+    {% endif %}
+    {% if page.description %}
+    <meta name="description" content="{{.Description}}">
+    <meta property="og:description" content="{{.Description}}" />
+    {% endif %}
+    <meta property="og:site_name" content="hookscript" />
+    <meta property="og:image" content="https://www.hookscript.com/images/logo-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="200x200" href="https://www.hookscript.com/images/logo-precomposed.png" /> <!-- ios app icon -->
+    <link rel="shortcut icon" sizes="200x200" href="https://www.hookscript.com/images/logo-precomposed.png" /> <!-- android app icon -->
+
+    {% include analytics.html %}
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="header">
+            <div class="container auto-margin">
+                <a href="/">
+                    <img id="logo" src="https://www.hookscript.com/images/logo.png" alt="hookscript logo" />
+                </a>
+                <div id="menu">
+                    <ul>
+                        <li>Language
+                            <select class="js-preferred-language">
+                                <option value="go">Go</option>
+                                <option value="perl">Perl</option>
+                                <option value="prolog">Prolog</option>
+                            </select>
+                        </li>
+                        <li><a href="https://www.hookscript.com/new">New Script</a></li>
+                        <li><a href="http://docs.hookscript.com">Documentation</a></li>
+                        <li><a href="https://www.hookscript.com/pricing">Pricing</a></li>
+                    </ul>
+                </div>
+            </div> <!-- end container -->
+        </div> <!-- end header -->
+
+        <div id="content">
+            {{content}}
+        </div> <!-- end content -->
+
+        <div id="footer">
+            <div class="container">
+                <ul>
+                    <li class="first_row">Navigation</li>
+                    <li><a href="https://www.hookscript.com">Home</a></li>
+                    <li><a href="https://www.hookscript.com/new">New Script</a></li>
+                    <li><a href="https://www.hookscript.com/pricing">Pricing</a></li>
+                    <li><a href="https://www.hookscript.com/about-us">About Us</a></li>
+                </ul>
+                <ul>
+                    <li class="first_row">Support</li>
+                    <li><a href="http://docs.hookscript.com">Documentation</a></li>
+                    <li><a href="https://www.hookscript.com/case-studies">Case Studies</a></li>
+                    <li><a href="https://www.hookscript.com/contact-us">Contact Us</a></li>
+                    <li>
+                        <a href="https://github.com/Hookscript/issues"
+                           onclick="ga('send', 'pageview', {'page':'/feature-request', 'title':'github feature request'});"
+                        >Feature Request</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="first_row">Account</li>
+                    <li><a href="https://www.hookscript.com/settings">Settings</a></li>
+                    <li><a href="https://www.hookscript.com/scripts">Your Scripts</a></li>
+                </ul>
+                <ul>
+                    <li class="first_row">Other</li>
+                    <li><a href="https://www.hookscript.com/terms-of-service">Terms of Service</a></li>
+                    <li><a href="https://www.hookscript.com/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="http://blog.hookscript.com/">Blog</a></li>
+                </ul>
+                <div class="share-buttons">
+                    <p>Follow hookscript</p>
+                    <a class="twitter"
+                       href="https://twitter.com/hookscript"
+                       onclick="ga('send', 'event', 'social', 'footer', 'twitter');"
+                       target="_blank"
+                    >
+                        &nbsp;
+                    </a>
+                    <a class="google"
+                       href="https://plus.google.com/u/0/b/118365617916131304333/118365617916131304333/posts"
+                       onclick="ga('send', 'event', 'social', 'footer', 'google');"
+                       target="_blank"
+                    >
+                        &nbsp;
+                    </a>
+                </div>
+            </div> <!-- end container -->
+        </div> <!-- end footer -->
+
+    </div> <!-- end container -->
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>

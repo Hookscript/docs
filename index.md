@@ -1,13 +1,12 @@
 ---
+layout: default
+title: Documentation | hookscript
 ---
 
 # Hello
 
-My second Jekyll page.  How about some code:
+My second Jekyll page.  Look at this code:
 
-```prolog
-father(michael, aravis).
-father(michael, jericho).
-```
+{% include examples/hello.md %}
 
-Another paragraph.
+Now let's explain something else ...
