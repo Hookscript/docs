@@ -3,6 +3,7 @@ package main
 
 import (
 	"fmt"
+	// no need to import "hookscript"
 )
 
 func Hook() {
@@ -12,7 +13,7 @@ func Hook() {
 
 
 ```perl
-use Hookscript;
+use Hookscript; # implies use strict; use warnings; use feature ":5.20"
 
 say "Hello, world!";
 ```
