@@ -7,3 +7,17 @@
 code {
     background-color: #eee;
 }
+
+/* always visible language selector */
+#lang {
+    margin: 1em 0;
+}
+.js-fixed {
+    margin: 0 !important;
+    padding-bottom: .5em;
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+}

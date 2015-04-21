@@ -9,6 +9,18 @@ $( function() {
     var lang = previously_preferred_language();
     $('.js-preferred-language').val(lang);
     show_only(lang);
+
+    // language selector is always visible
+    var menu = $('#header'),
+        pos = menu.offset();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > pos.top + menu.height()) {
+            $('#lang').addClass('js-fixed').fadeIn('fast');
+        } else if ($(this).scrollTop() <= pos.top) {
+            $('#lang').removeClass('js-fixed').fadeIn('fast');
+        }
+    });
 });
 
 // Returns the language which this user preferred the last time
