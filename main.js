@@ -22,10 +22,12 @@ function previously_preferred_language() {
 function show_only(lang) {
     // hide everything
     $('div.highlight').hide();
+    $('span.language-specific').hide();
 
     // show the language we want
     var code = $('div.highlight code.language-' + lang);
     code.closest('div.highlight').show();
+    $('.language-specific.language-'+lang).show();
 
     // remember this preference for next time
     localStorage["preferred-language"] = lang;

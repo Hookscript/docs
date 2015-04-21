@@ -16,9 +16,16 @@ my $lang_count = scalar @langs;
 
 # collect metadata for each language
 my %about;
+open my $fh, '>', '_includes/language-name.html';
 for my $lang (@langs) {
     $about{$lang} = LoadFile("lang/$lang/about.yaml");
+
+    my $pygments_name = $about{$lang}{pygments_name};
+    print $fh "<span class='language-specific language-$pygments_name'>";
+    print $fh $about{$lang}{english_name};
+    print $fh "</span>\n";
 }
+close $fh;
 
 # which examples are available?
 chdir "lang/perl/t";
