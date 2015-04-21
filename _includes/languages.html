@@ -1,3 +1,5 @@
+{% if page.hide_language_selector %}
+{% else %}
 <div style="margin: 10px 0;">
     Language
     <select class="js-preferred-language">
@@ -6,3 +8,4 @@
         <option value="prolog">Prolog</option>
     </select>
 </div>
+{% endif %}
