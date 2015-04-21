@@ -1,3 +1,6 @@
+#content {
+    width: 99%; /* prevents horizontal scrolling */
+}
 .highlight {
     margin: 0.5em 1em; /* indent code blocks slightly */
     padding: 1em;
