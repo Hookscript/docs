@@ -65,6 +65,10 @@
             <h1>{{page.title}}</h1>
             {% endif %}
             {{content}}
+
+            {% if page.next_page %}
+            <a class="medium blue button" href="{{ page.next_page }}">Next</a>
+            {% endif %}
         </div> <!-- end content -->
 
         <div id="footer">

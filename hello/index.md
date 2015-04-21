@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Hello world
+next_page: /request/
 ---
 
 Select your preferred language from the dropdown above.
