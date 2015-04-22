@@ -23,6 +23,3 @@ programming languages have good defaults for generating output on stdout.  It
 also means that a script which runs well on your local terminal should run, with
 minimal modifications, on Hookscript.  Compare for a moment the program above
 with the language's traditional hello world program.
-
-A script that only performs output isn't very interesting.  Let's do something
-that requires [access to the HTTP request](/request/).

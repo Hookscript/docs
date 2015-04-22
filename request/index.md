@@ -4,11 +4,13 @@ title: Incoming HTTP requests
 next_page: /response/
 ---
 
-This script sends greetings to anyone mentioned in the request's `whom`
-parameter.  If that parameter is missing, it greets the whole world.
+
+A script that always generates the same output isn't very interesting. Let's use
+**request parameters** instead. The following script sends greetings to anyone
+mentioned in the `whom` parameter.  If it's missing, greet the whole world.
 
 {% include examples/hello.md %}
 
 Each language implementation strives to represent an HTTP request
 idiomatically.  See the [language specific documentation](/specific)
-for details on how it's represented in {% include language-name.html %}.
+for details on how it's done in {% include language-name.html %}.
