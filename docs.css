@@ -6,18 +6,20 @@
     padding: 1em;
     background-color: #eee;
 }
-
 code {
     background-color: #eee;
+}
+p.breadcrumbs {
+    margin: 0;
 }
 
 /* always visible language selector */
 #lang {
-    margin: 1em 0;
+    margin: .2em 0;
 }
 .js-fixed {
     margin: 0 !important;
-    padding-bottom: .5em;
+    padding-bottom: .2em;
     border-bottom: solid 1px #ccc;
     width: 100%;
     background-color: #fff;
