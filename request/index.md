@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Incoming HTTP requests
+next_page: /response/
 ---
 
 This script sends greetings to anyone mentioned in the request's `whom`

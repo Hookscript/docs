@@ -10,5 +10,6 @@ hide_breadcrumbs: true
 
   1. [Hello world](/hello)
   1. [Incoming HTTP requests](/request)
+  1. [HTTP responses](/response/)
 
 See also: [language specific details](/specific/)
