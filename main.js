@@ -11,14 +11,14 @@ $( function() {
     show_only(lang);
 
     // language selector is always visible
-    var menu = $('#header'),
+    var menu = $('#lang'),
         pos = menu.offset();
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > pos.top + menu.height()) {
-            $('#lang').addClass('js-fixed').fadeIn('fast');
+            $('#lang').addClass('js-fixed');
         } else if ($(this).scrollTop() <= pos.top) {
-            $('#lang').removeClass('js-fixed').fadeIn('fast');
+            $('#lang').removeClass('js-fixed');
         }
     });
 });
