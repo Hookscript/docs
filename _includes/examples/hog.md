@@ -1,4 +1,5 @@
 ```go
+{% raw %}
 package main
 
 import (
@@ -39,10 +40,12 @@ func MaybePanic(err error) {
 		panic(err)
 	}
 }
+{% endraw %}
 ```
 
 
 ```perl
+{% raw %}
 use Hookscript;
 use experimental qw( switch );
 use autodie qw( open );
@@ -69,10 +72,12 @@ given ( $req->param('resource') ) {
         }
     }
 }
+{% endraw %}
 ```
 
 
 ```prolog
+{% raw %}
 :- use_module(library(hookscript)).
 
 hook :-
@@ -93,6 +98,7 @@ hog(output) :-
 
 hog_mem(T) :-
     hog_mem([x|T]).
+{% endraw %}
 ```
 
 

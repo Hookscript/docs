@@ -1,4 +1,5 @@
 ```go
+{% raw %}
 package main
 
 import (
@@ -35,10 +36,12 @@ const page = `
     </body>
 </html>
 `
+{% endraw %}
 ```
 
 
 ```perl
+{% raw %}
 use Hookscript;
 
 my $whom = $req->param('whom') // "world";
@@ -56,10 +59,12 @@ print <<"HTML";
     </body>
 </html>
 HTML
+{% endraw %}
 ```
 
 
 ```prolog
+{% raw %}
 :- use_module(library(hookscript)).
 
 hook :-
@@ -72,13 +77,15 @@ template("
 <html>
 <body>
     <h1>Hello, ~w!</h1>
-    
+
     <form method=GET>
         <input type=submit value='Say Hello to' />
         <input type=text name=whom placeholder='world' />
     </form>
 </body>
 </html>
-").```
+").
+{% endraw %}
+```
 
 

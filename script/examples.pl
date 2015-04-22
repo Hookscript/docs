@@ -40,7 +40,9 @@ for my $example (@examples) {
         my $name = $about{$lang}{pygments_name};
         open my $source, '<', glob("lang/$lang/t/$example.*");
         print $fh "```$name\n";
+        print $fh "{% raw %}\n";
         print $fh do { local $/; <$source> };
+        print $fh "{% endraw %}\n";
         print $fh "```\n";
         print $fh "\n\n";
     }

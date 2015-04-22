@@ -1,4 +1,5 @@
 ```go
+{% raw %}
 package main
 
 import (
@@ -36,10 +37,12 @@ func Hook(r *http.Request, state State) {
 
 	fmt.Print(value)
 }
+{% endraw %}
 ```
 
 
 ```perl
+{% raw %}
 use Hookscript;
 use experimental qw( switch );
 
@@ -56,10 +59,12 @@ given ( $req->method ) {
     }
 }
 print $value;
+{% endraw %}
 ```
 
 
 ```prolog
+{% raw %}
 :- use_module(library(hookscript)).
 
 :- dynamic state:register/2.
@@ -79,6 +84,7 @@ hook(get,Register,Value) :-
     ( state:register(Register,Value)
     ; format(string(Value),'unknown register: ~w', [Register])
     ).
+{% endraw %}
 ```
 
 

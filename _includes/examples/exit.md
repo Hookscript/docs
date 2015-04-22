@@ -1,4 +1,5 @@
 ```go
+{% raw %}
 package main
 
 import (
@@ -16,10 +17,12 @@ func Hook(r *http.Request) {
 		os.Exit(1)
 	}
 }
+{% endraw %}
 ```
 
 
 ```perl
+{% raw %}
 use Hookscript;
 use experimental qw(switch);
 
@@ -32,10 +35,12 @@ given ( $req->param('try') ) {
         exit 1;
     }
 }
+{% endraw %}
 ```
 
 
 ```prolog
+{% raw %}
 :- use_module(library(hookscript)).
 
 hook :-
@@ -48,6 +53,7 @@ hook(1,Msg) :-
 hook(2,Msg) :-
     format(user_error,"~s",[Msg]),
     halt(1).
+{% endraw %}
 ```
 
 

@@ -1,4 +1,5 @@
 ```go
+{% raw %}
 package main
 
 import (
@@ -29,10 +30,12 @@ func Hook(req *http.Request, res *http.Response) {
 	}
 	got.Body.Close()
 }
+{% endraw %}
 ```
 
 
 ```perl
+{% raw %}
 use Hookscript;
 use HTTP::Tiny;
 
@@ -47,10 +50,12 @@ else {
     $res->code( $response->{status} );
     print "Request to $url failed";
 }
+{% endraw %}
 ```
 
 
 ```prolog
+{% raw %}
 :- use_module(library(hookscript)).
 :- use_module(library(web), []).
 
@@ -65,6 +70,7 @@ hook :-
         res:assert(status(Status, "")),
         format("Request to ~s failed", [Url])
     ).
+{% endraw %}
 ```
 
 
