@@ -1,6 +1,7 @@
 ---
 layout: default
 title: HTTP responses
+next_page: /state/
 ---
 
 The [previous](/hello/) [examples](/request/) produce plain text responses. If
