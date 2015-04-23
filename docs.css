@@ -26,3 +26,18 @@ p.breadcrumbs {
     position: fixed;
     top: 0;
 }
+.js-fixed p.breadcrumbs {
+    float: left;
+    margin-right: 2em;
+}
+
+@media screen and (max-width:1000px) {
+    p {
+        padding-right: 10px; /* prevents horizontal scrolling on small screens */
+    }
+}
+@media screen and (max-width:400px) {
+    .js-fixed p.breadcrumbs {
+        float: none; /* prevents wrapping on language drop down */
+    }
+}
