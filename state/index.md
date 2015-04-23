@@ -22,8 +22,8 @@ associated with a key.  A GET request reads the value.
 
 {% include examples/state-registers.md %}
 
-For whatever reason, this app forbids writing to the `death` key.  If your
-script happens to exit with a non-zero exit code, you can inspect your script's
+For instructional purposes, this app forbids writing to the `death` key.  If your
+script exits with a non-zero exit code, you can inspect your script's
 request log to see what went wrong.  Anything sent to stderr is visible there
 (along with the entire HTTP request and response). This can be very helpful when
 debugging.
