@@ -36,6 +36,11 @@ p.breadcrumbs {
         padding-right: 10px; /* prevents horizontal scrolling on small screens */
     }
 }
+@media screen and (max-width:500px) {
+    .js-fixed span, .js-fixed select {
+        font-size: .8em;
+    }
+}
 @media screen and (max-width:400px) {
     .js-fixed p.breadcrumbs {
         float: none; /* prevents wrapping on language drop down */
