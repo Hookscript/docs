@@ -13,5 +13,6 @@ hide_breadcrumbs: true
   1. [HTTP responses](/response/)
   1. [Persistent state](/state/)
   1. [Outgoing network requests](/outgoing/)
+  1. [Request log](/request-log/)
 
 See also: [language specific details](/specific/)

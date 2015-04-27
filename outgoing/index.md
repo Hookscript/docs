@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Outgoing network requests
+next_page: /request-log/
 ---
 
 Unlike code playgrounds, Hookscript runs your code inside its own private
