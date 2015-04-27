@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Persistent state
+next_page: /outgoing/
 ---
 
 HTTP is a [stateless protocol](http://stackoverflow.com/a/13200599/174463) so
