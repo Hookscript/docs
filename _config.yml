@@ -6,6 +6,7 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - Makefile
+    - README.md
     - lang
     - script
     - _includes/examples/README.md

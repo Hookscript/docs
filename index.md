@@ -16,3 +16,7 @@ hide_breadcrumbs: true
   1. [Request log](/request-log/)
 
 See also: [language specific details](/specific/)
+
+All documentation on this site is
+[open source](https://github.com/hookscript/docs).
+Pull requests and issues are invited.
