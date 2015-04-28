@@ -1,6 +1,7 @@
 highlighter: pygments
 markdown: redcarpet
 port: 8080
+url: "http://docs.hookscript.com"
 exclude:
     - CNAME
     - Gemfile
