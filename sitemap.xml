@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/hello/</loc>
+  </url>
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/outgoing/</loc>
+  </url>
+  <url>
+    <loc>/request/</loc>
+  </url>
+  <url>
+    <loc>/request-log/</loc>
+  </url>
+  <url>
+    <loc>/response/</loc>
+  </url>
+  <url>
+    <loc>/specific/</loc>
+  </url>
+  <url>
+    <loc>/state/</loc>
+  </url>
+</urlset>
