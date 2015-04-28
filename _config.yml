@@ -10,3 +10,5 @@ exclude:
     - lang
     - script
     - _includes/examples/README.md
+gems:
+    - jekyll-sitemap
