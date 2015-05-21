@@ -33,3 +33,12 @@ hook :-
 ```
 
 
+```python
+{% raw %}
+import hookscript
+
+print("Hello, world!")
+{% endraw %}
+```
+
+

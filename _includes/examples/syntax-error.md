@@ -28,3 +28,12 @@ hook :-
 ```
 
 
+```python
+{% raw %}
+import hookscript
+
+x =
+{% endraw %}
+```
+
+

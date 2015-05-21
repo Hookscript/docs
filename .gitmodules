@@ -7,3 +7,6 @@
 [submodule "lang/perl"]
 	path = lang/perl
 	url = https://github.com/Hookscript/lang-perl.git
+[submodule "lang/python"]
+	path = lang/python
+	url = https://github.com/Hookscript/lang-python.git
